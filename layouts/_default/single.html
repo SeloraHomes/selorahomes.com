@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <article class="prose prose-lg prose-invert max-w-3xl mx-auto prose-p:text-zinc-300 prose-li:text-zinc-300 prose-strong:text-zinc-200">
+          <h1 class="gold-text">{{ .Title }}</h1>
+          {{ .Content }}
+        </article>
+      </div>
+    </main>
+{{ end }}

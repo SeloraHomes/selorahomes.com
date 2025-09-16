@@ -1,0 +1,67 @@
+/* Dark luxury theme for Selora Homes */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d; /* Very dark background like in the image */
+  color: #f5f5f5; /* Light text */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.5; 
+  }
+}
+
+/* Override any light styling */
+.bg-background {
+  background-color: #0d0d0d !important;
+}
+
+.text-foreground {
+  color: #f5f5f5 !important;
+}
+
+.bg-card {
+  background-color: #1a1a1a !important;
+}
+
+.text-muted-foreground {
+  color: #999999 !important;
+}
+
+.bg-primary {
+  background-color: #c7ae6a !important; /* Gold from screenshot */
+}
+
+.text-primary {
+  color: #c7ae6a !important;
+}
+
+.text-primary-foreground {
+  color: #0d0d0d !important;
+}
+
+.border-border {
+  border-color: #333333 !important;
+}
+
+.hover\:bg-muted:hover {
+  background-color: #262626 !important;
+}
+
+.bg-muted\/20 {
+  background-color: rgba(38, 38, 38, 0.2) !important;
+}

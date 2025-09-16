@@ -1,0 +1,31 @@
+{
+  "name": "selora-homes-landing-page",
+  "version": "1.0.0",
+  "description": "Selora Homes professional landing page built with Hugo and Tailwind CSS",
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --minify",
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --watch",
+    "deploy": "hugo --minify && gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeloraHomes/landing_page.git"
+  },
+  "keywords": [
+    "hugo",
+    "tailwindcss",
+    "landing-page",
+    "smart-home",
+    "home-assistant"
+  ],
+  "author": "Selora Homes",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^4.1.13"
+  }
+}

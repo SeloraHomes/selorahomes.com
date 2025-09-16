@@ -1,0 +1,185 @@
+# Default baseURL for local/dev. The CI pipeline overrides this with the
+# GitHub Pages base URL or a custom domain when provided.
+baseURL: "/"
+languageCode: "en-us"
+title: "Selora Homes - Professional Smart Home Management"
+
+params:
+  description: "Professional SaaS platform for Home Assistant installers serving homeowners. Elevate your smart home installation business with professional tools and support."
+  author: "Selora Homes"
+  logo: "/images/selora-logo.svg"
+  keywords:
+    [
+      "Home Assistant support",
+      "Professional Home Assistant",
+      "Enterprise home automation",
+      "Home Assistant installer services",
+      "Smart home professional solutions",
+      "Home Assistant enterprise",
+      "Professional smart home automation",
+      "Home Assistant managed services",
+    ]
+
+  # Enhanced SEO parameters
+  og_image: "/images/selora-og-image.jpg"
+  twitter_creator: "@SeloraHomes"
+  company_type: "Technology Company"
+  service_area: "United States"
+  phone: "+1-555-012-3456"
+  email: "partners@selorahomes.com"
+  address: "123 Innovation Drive, Smart City, SC 29485"
+
+  # Brand colors
+  colors:
+    primary_gold: "#C7AE6A"
+    secondary_gold: "#b99a45"
+    light_gold: "#d5c28f"
+    cream: "#e3d6b4"
+    primary_black: "#000000"
+    charcoal: "#1a1a1a"
+
+# GitHub Pages specific settings
+publishDir: "public"
+relativeURLs: false
+canonifyURLs: true
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allow HTML in markdown for custom components
+    parser:
+      attribute:
+        block: true
+        title: true
+  highlight:
+    style: github
+    lineNos: false
+    codeFences: true
+    guessSyntax: true
+    tabWidth: 2
+
+# SEO and performance
+enableRobotsTXT: true
+enableGitInfo: true
+disableHugoGeneratorInject: true
+
+# Minification settings for production
+minify:
+  disableXML: true
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepDefaultAttrVals: false
+      keepDocumentTags: true
+      keepEndTags: true
+      keepQuotes: false
+      keepWhitespace: false
+    css:
+      precision: 0
+      keepCSS2: true
+    js:
+      precision: 0
+      keepVarNames: false
+    json:
+      precision: 0
+    svg:
+      precision: 0
+    xml:
+      keepWhitespace: false
+
+# Sitemap configuration
+sitemap:
+  changefreq: "weekly"
+  priority: 1.0
+  filename: "sitemap.xml"
+
+# Menu configuration (for future expansion)
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 10
+
+# Output formats for GitHub Pages
+outputs:
+  home: ["HTML", "RSS", "JSON", "WebAppManifest"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+
+# Site-wide SEO defaults
+defaultContentLanguage: "en"
+hasCJKLanguage: false
+
+# Build configuration optimized for CI/CD
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+removePathAccents: true
+disablePathToLower: false
+
+# Performance optimization
+timeout: 30s
+enableInlineShortcodes: true
+disableKinds: []
+
+# Asset processing
+imaging:
+  resampleFilter: "lanczos"
+  quality: 85
+  anchor: "smart"
+
+# Security configuration
+security:
+  enableInlineShortcodes: false
+  funcs:
+    getenv:
+      - "^HUGO_"
+      - "^CI$"
+  http:
+    urls:
+      - ".*"
+
+# Privacy configuration for GDPR compliance (updated format)
+privacy:
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: true
+    anonymizeIP: true
+    useSessionStorage: true
+  x:
+    enableDNT: true
+    simple: true
+  youtube:
+    privacyEnhanced: true
+    simple: true
+  vimeo:
+    enableDNT: true
+    simple: true
+
+# Development server configuration
+server:
+  headers:
+    - for: "/**"
+      values:
+        X-Frame-Options: "DENY"
+        X-XSS-Protection: "1; mode=block"
+        X-Content-Type-Options: "nosniff"
+        Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';"
+
+# Tailwindcss
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/notwatching/hugo_stats\.json
+      target: css
+    - source: (postcss|tailwind)\.config\.js
+      target: css
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - disableWatch: true
+      source: hugo_stats.json
+      target: assets/notwatching/hugo_stats.json

@@ -1,0 +1,152 @@
+{{ define "main" }}
+    <!-- Hero Section -->
+    <main class="min-h-screen flex flex-col justify-start md:justify-center items-center relative overflow-hidden pt-24 md:pt-0">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <canvas id="hero-shader" class="absolute inset-0 w-full h-full"></canvas>
+            <div class="absolute -inset-24 bg-[radial-gradient(50%_50%_at_50%_10%,rgba(245,158,11,0.12),transparent_60%)]"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] bg-amber-500/5 rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10 py-8 md:py-12">
+            <!-- Headline -->
+            <div class="animate-fade-in mb-10 md:mb-12">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight font-extrabold tracking-tight">
+                    <span class="gold-text">Enjoy the Freedom of</span>
+                    <br/>
+                    <span class="text-zinc-50">Home Assistant</span>
+                </h1>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl text-zinc-400 font-medium mt-6">
+                    With Professional Support
+                </h2>
+                <p class="text-lg sm:text-xl text-zinc-500 mt-6 max-w-3xl mx-auto leading-relaxed">
+                    Connect with experts and unlock premium features for your Home Assistant setup. Join thousands of homeowners and professionals in our exclusive Connect portal.
+                </p>
+            </div>
+            <!-- Primary CTA -->
+            <div class="animate-fade-in" style="animation-delay: 0.4s">
+                <a
+                    href="#register"
+                    class="inline-block px-10 py-5 bg-amber-500 text-black text-xl font-semibold rounded-xl transition-all duration-300 pulse-glow btn-glow-primary"
+                >
+                    Get Early Access - Free
+                </a>
+                <p class="mt-4 text-sm text-zinc-500">
+                    No credit card required • Premium features launching soon
+                </p>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <a id="scroll-indicator" href="#why" aria-label="Scroll down" class="group fixed bottom-6 left-1/2 -translate-x-1/2 z-20 animate-bounce-slow transition-opacity duration-300 hidden md:block">
+            <div class="w-6 h-10 border-2 border-amber-500/35 rounded-full flex justify-center items-start pulse-gold-border">
+                <div class="w-1 h-3 bg-amber-500/75 rounded-full mt-2 pulse-gold-bg"></div>
+            </div>
+        </a>
+    </main>
+
+    <!-- Why Choose Section -->
+    <section id="why" class="relative min-h-screen flex flex-col justify-center py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl text-center font-extrabold tracking-tight">
+                Why Choose <span class="gold-text-center">Selora Homes</span>?
+            </h2>
+            <p class="text-zinc-400 text-center mt-4 max-w-3xl mx-auto">
+                We bridge the gap between Home Assistant's powerful capabilities and user-friendly experience. Whether you're a homeowner or professional, we provide the support you need.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <!-- Connect Portal -->
+                <div class="rounded-xl bg-zinc-900 border border-amber-500/20 p-6">
+                    <div class="text-amber-400 mb-3">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 4h16v12H7l-3 3V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-zinc-50">Connect Portal</h3>
+                    <p class="text-zinc-400 mt-2">Join our exclusive community of Home Assistant users and professionals. Get direct access to expert support and premium resources.</p>
+                    <ul class="text-zinc-300 text-sm mt-4 space-y-2">
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Online Expert Support</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Priority Response</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Community Forums</li>
+                    </ul>
+                </div>
+                <!-- For Home Owners -->
+                <div class="rounded-xl bg-zinc-900 border border-amber-500/20 p-6">
+                    <div class="text-amber-400 mb-3">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-6h-4v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-zinc-50">For Home Owners</h3>
+                    <p class="text-zinc-400 mt-2">Transform your home into a smart sanctuary with professional guidance. We make Home Assistant accessible for everyone.</p>
+                    <ul class="text-zinc-300 text-sm mt-4 space-y-2">
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Setup Assistance</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Custom Configurations</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Troubleshooting</li>
+                    </ul>
+                </div>
+                <!-- For Professionals -->
+                <div class="rounded-xl bg-zinc-900 border border-amber-500/20 p-6">
+                    <div class="text-amber-400 mb-3">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v9H2V9a2 2 0 0 1 2-2h2V5zm2 2h4V5h-4v2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-zinc-50">For Professionals</h3>
+                    <p class="text-zinc-400 mt-2">Scale your smart home business with enterprise‑grade support and advanced tools designed for installers and integrators.</p>
+                    <ul class="text-zinc-300 text-sm mt-4 space-y-2">
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Business Tools</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Bulk Licensing</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Technical Resources</li>
+                    </ul>
+                </div>
+                <!-- Privacy & Security -->
+                <div class="rounded-xl bg-zinc-900 border border-amber-500/20 p-6">
+                    <div class="text-amber-400 mb-3">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2l8 4v6c0 5-3.6 9.4-8 10C7.6 21.4 4 17 4 12V6l8-4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-zinc-50">Privacy &amp; Security</h3>
+                    <p class="text-zinc-400 mt-2">Keep your data local and secure. Home Assistant runs entirely on your network, with our support maintaining your privacy.</p>
+                    <ul class="text-zinc-300 text-sm mt-4 space-y-2">
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Local Control</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>No Cloud Dependency</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>No vendor lock-in</li>
+                    </ul>
+                </div>
+                <!-- Premium Support -->
+                <div class="rounded-xl bg-zinc-900 border border-amber-500/20 p-6">
+                    <div class="text-amber-400 mb-3">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 3a7 7 0 0 0-7 7v4a3 3 0 0 0 3 3h2v-4H7V10a5 5 0 0 1 10 0v3h-3v4h2a3 3 0 0 0 3-3v-4a7 7 0 0 0-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-zinc-50">Premium Support</h3>
+                    <p class="text-zinc-400 mt-2">Get help from certified Home Assistant experts. From simple questions to complex automations, we've got you covered.</p>
+                    <ul class="text-zinc-300 text-sm mt-4 space-y-2">
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Video Consultations</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Remote Assistance</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Custom Solutions</li>
+                    </ul>
+                </div>
+                <!-- Advanced Features -->
+                <div class="rounded-xl bg-zinc-900 border border-amber-500/20 p-6">
+                    <div class="text-amber-400 mb-3">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-zinc-50">Advanced Features</h3>
+                    <p class="text-zinc-400 mt-2">Unlock premium integrations and advanced automations. Take your Home Assistant setup to the next level.</p>
+                    <ul class="text-zinc-300 text-sm mt-4 space-y-2">
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Premium Integrations</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Advanced Automations</li>
+                        <li class="flex items-center gap-2 text-xl"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Early Access</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#register" class="inline-block px-8 py-4 bg-amber-500 text-black font-semibold rounded-xl btn-glow-primary transition-all duration-300">Start Your Journey Today</a>
+            </div>
+        </div>
+    </section>
+{{ end }}
