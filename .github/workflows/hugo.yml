@@ -64,7 +64,7 @@ jobs:
 
       - name: Build Tailwind CSS
         run: |
-          npx tailwindcss -i ./assets/css/input.css -o ./static/css/style.css --minify
+          npx tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --minify
 
       - name: Verify Tailwind CSS build
         run: |
