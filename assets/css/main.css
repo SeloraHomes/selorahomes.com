@@ -204,8 +204,8 @@
   color: transparent;
 }
 
-/* Scroll snapping between sections */
-html,
+/* Scroll snapping disabled to prevent conflicts with typewriter animation */
+/* html,
 body {
   scroll-snap-type: y mandatory;
   scroll-padding-top: 64px;
@@ -218,7 +218,7 @@ main,
 #why,
 #footer {
   scroll-snap-stop: always;
-}
+} */
 
 /* Why section layout + icon glow */
 #why .rounded-xl.bg-zinc-900.p-6 {

@@ -11,7 +11,13 @@
             <!-- Headline -->
             <div class="animate-fade-in mb-10 md:mb-12">
                 <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight font-extrabold tracking-tight">
-                    <span class="gold-text">Enjoy the Freedom of</span>
+                    <span class="gold-text">
+                        <span>Enjoy the</span>
+                        <span class="hidden sm:inline"> </span>
+                        <span class="sm:hidden"><br/></span>
+                        <span x-data="{ texts: ['Freedom', 'Privacy', 'Simplicity', 'Security'] }" x-typewriter.cursor="texts" aria-live="polite"></span>
+                        <span> of</span>
+                    </span>
                     <br/>
                     <span class="text-zinc-50">Home Assistant</span>
                 </h1>
