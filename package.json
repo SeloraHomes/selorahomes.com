@@ -5,8 +5,12 @@
   "scripts": {
     "dev": "hugo server -D",
     "build": "hugo --minify",
-    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/style.css --watch",
-    "deploy": "hugo --minify && gh-pages -d public"
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./static/css/style.css --watch",
+    "deploy": "hugo --minify && gh-pages -d public",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:check:templates": "prettier --check \"layouts/**/*.html\"",
+    "prepare": "lefthook install"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,15 @@
   ],
   "author": "Selora Homes",
   "license": "MIT",
+  "dependencies": {
+    "@marcreichel/alpine-typewriter": "^1",
+    "alpinejs": "^3"
+  },
   "devDependencies": {
+    "lefthook": "^1.7.12",
+    "prettier": "^3.3.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "@tailwindcss/cli": "^4.1.13",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.16",

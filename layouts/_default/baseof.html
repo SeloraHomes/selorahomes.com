@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site.LanguageCode | default "en" }}" class="h-full">
-<head>
+  <head>
     {{ partial "head.html" . }}
     {{ block "head" . }}{{ end }}
-</head>
-<body class="bg-black text-zinc-200 antialiased flex flex-col min-h-screen">
+  </head>
+  <body class="flex min-h-screen flex-col bg-black text-zinc-200 antialiased">
     {{ partial "header.html" . }}
 
     {{ block "main" . }}{{ end }}
 
     {{ partial "footer.html" . }}
-</body>
+  </body>
 </html>

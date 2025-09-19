@@ -1,21 +1,26 @@
 <!-- Header -->
-<header class="sticky top-0 shrink-0 z-40 bg-black/70 backdrop-blur border-b border-zinc-800">
-    <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-            <img
-                src="{{ "selora-logo.png" | relURL }}"
-                alt="Selora Homes"
-                class="h-12 w-12 rounded-xl"
-            />
-            <span class="gold-text-center brand-glow text-2xl sm:text-3xl font-bold tracking-tight">Selora Homes</span>
-        </a>
-        <div class="flex items-center gap-3">
-            <a
-                href="#login"
-                class="px-4 py-2 rounded-xl bg-zinc-900/60 border border-amber-500/30 text-amber-300 btn-glow-secondary transition-all duration-300 hover:bg-amber-400 hover:text-black"
-            >
-                Log in
-            </a>
-        </div>
+<header
+  class="sticky top-0 z-40 shrink-0 border-b border-zinc-800 bg-black/70 backdrop-blur"
+>
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
+    <a href="/" class="flex items-center gap-3">
+      <img
+        src="{{ "selora-logo.png" | relURL }}"
+        alt="Selora Homes"
+        class="h-12 w-12 rounded-xl"
+      />
+      <span
+        class="gold-text-center brand-glow text-2xl font-bold tracking-tight sm:text-3xl"
+        >Selora Homes</span
+      >
+    </a>
+    <div class="flex items-center gap-3">
+      <a
+        href="#login"
+        class="btn-glow-secondary rounded-xl border border-amber-500/30 bg-zinc-900/60 px-4 py-2 text-amber-300 transition-all duration-300 hover:bg-amber-400 hover:text-black"
+      >
+        Log in
+      </a>
     </div>
+  </div>
 </header>

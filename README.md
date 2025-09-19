@@ -7,22 +7,28 @@ Official marketing website for Selora Homes - Enterprise Home Assistant Solution
 ## Quick Start
 
 ### Prerequisites
+
 - [Hugo](https://gohugo.io/installation/) (v0.120.0 or later)
 - [Node.js](https://nodejs.org/) (v18 or later)
 
 ### Development Setup
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
-2. **Build Tailwind CSS:**
+2. **Build Tailwind CSS (optional):**
+
+   Hugo already builds Tailwind v4 via its pipeline. If you want a standalone CSS build:
+
    ```bash
-   npx tailwindcss -i ./assets/css/input.css -o ./static/css/style.css --minify
+   npx @tailwindcss/cli -i ./assets/css/main.css -o ./static/css/style.css --minify
    ```
 
 3. **Start development server:**
+
    ```bash
    hugo server
    ```
@@ -33,6 +39,7 @@ Official marketing website for Selora Homes - Enterprise Home Assistant Solution
 ### Production Build
 
 1. **Build for production:**
+
    ```bash
    npm run build
    ```
@@ -48,7 +55,7 @@ Official marketing website for Selora Homes - Enterprise Home Assistant Solution
 ├── layouts/             # Hugo templates
 ├── static/              # Static assets (images, CSS)
 ├── config.yaml          # Hugo configuration
-└── tailwind.config.js   # Tailwind configuration
+└── assets/css/main.css  # Tailwind v4 theme + CSS
 ```
 
 ## Features
