@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    prettier-templates-check:
+      glob: "layouts/**/*.html"
+      run: npx prettier --check {staged_files}

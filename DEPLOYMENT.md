@@ -32,17 +32,20 @@ The GitHub Actions workflow (`/.github/workflows/hugo.yml`) includes:
 ### Local Development
 
 1. **Install Dependencies**
+
    ```bash
    npm install
    ```
 
 2. **Start Development Server**
+
    ```bash
    npm run dev
    # Site available at http://localhost:1313
    ```
 
 3. **Build Tailwind CSS (if needed)**
+
    ```bash
    npm run css:build    # One-time build
    npm run css:watch    # Watch for changes
@@ -80,6 +83,7 @@ The GitHub Actions workflow (`/.github/workflows/hugo.yml`) includes:
    - Test locally using `npm run dev`
 
 2. **Commit and Push**
+
    ```bash
    git add .
    git commit -m "feat: update content"
@@ -141,6 +145,7 @@ Set in repository Settings → Secrets and variables → Actions:
 ### Support
 
 For deployment issues:
+
 1. Check GitHub Actions logs
 2. Verify all required files are present
 3. Ensure repository permissions are correct

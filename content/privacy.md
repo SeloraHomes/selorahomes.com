@@ -23,40 +23,40 @@ concerns to them.
 **Information you provide to us.** Personal information you may provide to us
 through the Service or otherwise includes:
 
--  **Contact data**, such as your first and last name, salutation, email address,
-physical address, professional title and company name, and phone number.
+- **Contact data**, such as your first and last name, salutation, email address,
+  physical address, professional title and company name, and phone number.
 
--  **Communications data** based on our exchanges with you, including when you
-contact us through the Service, social media, or otherwise.
+- **Communications data** based on our exchanges with you, including when you
+  contact us through the Service, social media, or otherwise.
 
--  **Marketing data**, such as your preferences for receiving our marketing
-communications and details about your engagement with them.
+- **Marketing data**, such as your preferences for receiving our marketing
+  communications and details about your engagement with them.
 
--  **Other data** not specifically listed here, which we will use as described in
-this Privacy Policy or as otherwise disclosed at the time of collection.
+- **Other data** not specifically listed here, which we will use as described in
+  this Privacy Policy or as otherwise disclosed at the time of collection.
 
 **Automatic data collection.** We, our service providers, and our business
 partners may automatically log information about you, your computer or mobile
 device, and your interaction over time with the Service, our communications and
 other online services, such as:
 
--  **Device data**, such as your computer or mobile device's operating system
-type and version, manufacturer and model, browser type, screen resolution, RAM
-and disk size, CPU usage, device type (e.g., phone, tablet), IP address, unique
-identifiers (including identifiers used for advertising purposes), language
-settings, mobile device carrier, radio/network information (e.g., Wi-Fi, LTE,
-3G), and general location information such as city, state or geographic area.
+- **Device data**, such as your computer or mobile device's operating system
+  type and version, manufacturer and model, browser type, screen resolution, RAM
+  and disk size, CPU usage, device type (e.g., phone, tablet), IP address, unique
+  identifiers (including identifiers used for advertising purposes), language
+  settings, mobile device carrier, radio/network information (e.g., Wi-Fi, LTE,
+  3G), and general location information such as city, state or geographic area.
 
--  **Online activity data**, such as pages or screens you viewed, how long you
-spent on a page or screen, the website you visited before browsing to the
-Service, navigation paths between pages or screens, information about your
-activity on a page or screen, access times and duration of access, and whether
-you have opened our emails or clicked links within them.
+- **Online activity data**, such as pages or screens you viewed, how long you
+  spent on a page or screen, the website you visited before browsing to the
+  Service, navigation paths between pages or screens, information about your
+  activity on a page or screen, access times and duration of access, and whether
+  you have opened our emails or clicked links within them.
 
--  **Communication interaction data** such as your interactions with our email,
-text or other communications (e.g., whether you open and/or forward emails) – we
-may do this through use of pixel tags (which are also known as clear GIFs),
-which may be embedded invisibly in our emails.
+- **Communication interaction data** such as your interactions with our email,
+  text or other communications (e.g., whether you open and/or forward emails) – we
+  may do this through use of pixel tags (which are also known as clear GIFs),
+  which may be embedded invisibly in our emails.
 
 For more information concerning our automatic collection of data, please see the
 Tracking technologies section below.
@@ -66,21 +66,21 @@ Tracking technologies section below.
 **Cookies and other technologies.** Some of the automatic collection described
 above is facilitated by the following technologies:
 
--  **Cookies**, which are small text files that websites store on user devices
-and that allow web servers to record users' web browsing activities and remember
-their submissions, preferences, and login status as they navigate a site.
-Cookies used on our sites include both "session cookies" that are deleted when a
-session ends, "persistent cookies" that remain longer, "first party" cookies
-that we place and "third party" cookies that our third-party business partners
-and service providers place.
+- **Cookies**, which are small text files that websites store on user devices
+  and that allow web servers to record users' web browsing activities and remember
+  their submissions, preferences, and login status as they navigate a site.
+  Cookies used on our sites include both "session cookies" that are deleted when a
+  session ends, "persistent cookies" that remain longer, "first party" cookies
+  that we place and "third party" cookies that our third-party business partners
+  and service providers place.
 
--  **Local storage technologies**, like HTML5, that provide cookie-equivalent
-functionality but can store larger amounts of data on your device outside of
-your browser in connection with specific applications.
+- **Local storage technologies**, like HTML5, that provide cookie-equivalent
+  functionality but can store larger amounts of data on your device outside of
+  your browser in connection with specific applications.
 
--  **Web beacons**, also known as pixel tags or clear GIFs, which are used to
-demonstrate that a webpage or email was accessed or opened, or that certain
-content was viewed or clicked.
+- **Web beacons**, also known as pixel tags or clear GIFs, which are used to
+  demonstrate that a webpage or email was accessed or opened, or that certain
+  content was viewed or clicked.
 
 For information concerning your choices with respect to the use of tracking
 technologies, see the Your choices section, below.
@@ -92,10 +92,10 @@ described at the time of collection:
 
 **Service delivery and operations.** We may use your personal information to:
 
--  provide the Service -  enable security features of the Service -  communicate
-with you about the Service, including by sending Service-related announcements,
-updates, security alerts, and support and administrative messages -  provide
-support for the Service, and respond to your requests, questions and feedback.
+- provide the Service - enable security features of the Service - communicate
+  with you about the Service, including by sending Service-related announcements,
+  updates, security alerts, and support and administrative messages - provide
+  support for the Service, and respond to your requests, questions and feedback.
 
 **Marketing.** We, our service providers and our third-party partners may
 collect and use your personal information for marketing purposes, such as to
@@ -105,33 +105,33 @@ communications as described in the Opt-out of marketing section below.
 
 **Compliance and protection.** We may use your personal information to:
 
--  comply with applicable laws, lawful requests, and legal process, such as to
-respond to subpoenas, investigations or requests from government authorities - 
-protect our, your or others' rights, privacy, safety or property (including by
-making and defending legal claims) -  audit our internal processes for compliance
-with legal and contractual requirements or our internal policies -  enforce the
-terms and conditions that govern the Service; and -  prevent, identify,
-investigate and deter fraudulent, harmful, unauthorized, unethical or illegal
-activity, including cyberattacks and identity theft.
+- comply with applicable laws, lawful requests, and legal process, such as to
+  respond to subpoenas, investigations or requests from government authorities -
+  protect our, your or others' rights, privacy, safety or property (including by
+  making and defending legal claims) - audit our internal processes for compliance
+  with legal and contractual requirements or our internal policies - enforce the
+  terms and conditions that govern the Service; and - prevent, identify,
+  investigate and deter fraudulent, harmful, unauthorized, unethical or illegal
+  activity, including cyberattacks and identity theft.
 
 **Cookies and other technologies.** In addition to the other uses included in
 this section, we may use the Cookies and other technologies described above for
 the following purposes:
 
--  **Technical operation.** To allow the technical operation of the Service, such
-as by remembering your selections and preferences as you navigate the site, and
-whether you are logged in when you visit password protected areas of the
-Service.
+- **Technical operation.** To allow the technical operation of the Service, such
+  as by remembering your selections and preferences as you navigate the site, and
+  whether you are logged in when you visit password protected areas of the
+  Service.
 
--  **Functionality.** To enhance the performance and functionality of our
-services.
+- **Functionality.** To enhance the performance and functionality of our
+  services.
 
--  **Analytics.** To help us understand user activity on the Service, including
-which pages are most and least visited and how visitors move around the Service,
-as well as user interactions with our emails. For example, we use PostHog for
-this purpose. You can learn more about PostHog and how to prevent the use of
-PostHog relating to your use of our sites here:
-https://posthog.com/docs/privacy.
+- **Analytics.** To help us understand user activity on the Service, including
+  which pages are most and least visited and how visitors move around the Service,
+  as well as user interactions with our emails. For example, we use PostHog for
+  this purpose. You can learn more about PostHog and how to prevent the use of
+  PostHog relating to your use of our sites here:
+  https://posthog.com/docs/privacy.
 
 **To create aggregated, de-identified and/or anonymized data.** We may create
 aggregated, de-identified and/or anonymized data from your personal information
@@ -252,5 +252,5 @@ your interactions with the Service and our business.
 
 ## How to contact us
 
--  **Email:** [DPO@SeloraHomes.com](mailto:DPO@SeloraHomes.com)
--  **Mail:** 455 Market St Ste 1940, PMB 487449, San Francisco California 94105-2448
+- **Email:** [DPO@SeloraHomes.com](mailto:DPO@SeloraHomes.com)
+- **Mail:** 455 Market St Ste 1940, PMB 487449, San Francisco California 94105-2448
