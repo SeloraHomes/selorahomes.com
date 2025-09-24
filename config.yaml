@@ -38,6 +38,12 @@ params:
     primary_black: "#000000"
     charcoal: "#1a1a1a"
 
+  # Selora Homes
+  SeloraHomes:
+    Connect:
+      loginURL: https://connect.selorahomes.com/login
+      registerURL: https://connect.selorahomes.com/register
+
 # GitHub Pages specific settings
 publishDir: "public"
 relativeURLs: false

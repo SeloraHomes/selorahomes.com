@@ -16,10 +16,15 @@
     </a>
     <div class="flex items-center gap-3">
       <a
-        href="#login"
-        class="btn-glow-secondary rounded-xl border border-amber-500/30 bg-zinc-900/60 px-4 py-2 text-amber-300 transition-all duration-300 hover:bg-amber-400 hover:text-black"
+        href="{{ .Site.Params.SeloraHomes.Connect.loginURL }}"
+        class="rounded-xl border border-zinc-700 px-4 py-2 text-zinc-200 transition hover:bg-zinc-800"
+        >Login</a
       >
-        Log in
+      <a
+        href="{{ .Site.Params.SeloraHomes.Connect.registerURL }}"
+        class="rounded-xl bg-amber-500 px-4 py-2 text-black transition-colors duration-200 hover:bg-amber-400"
+      >
+        Register
       </a>
     </div>
   </div>

@@ -3,20 +3,20 @@
     <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
       <!-- Brand -->
       <div>
-        <div class="flex items-center gap-3">
+        <a href="/" class="flex items-center gap-3">
           <img
             src="{{ "/selora-logo.png" | relURL }}"
             alt="Selora Homes"
             class="h-8 w-8 rounded-lg"
           />
           <span
-            class="gold-text-center brand-glow text-xl font-extrabold tracking-tight"
+            class="gold-text-center brand-glow text-xl font-extrabold tracking-tight whitespace-nowrap"
             >Selora Homes</span
           >
-        </div>
+        </a>
         <p class="mt-4 max-w-xs text-sm text-zinc-400">
-          Empowering smart homes with professional Home Assistant support.
-          Trusted by homeowners and installers.
+          Building the future of homes with
+          <a href="https://home-assistant.io">Home Assistant</a>
         </p>
         <div class="mt-4 flex items-center gap-4 text-amber-400/80">
           <!-- X -->
@@ -66,17 +66,13 @@
         <h4 class="mb-4 font-semibold text-zinc-200">Company</h4>
         <ul class="space-y-2 text-sm text-zinc-400">
           <li>
-            <a href="javascript:void(0)" class="hover:text-amber-300">About</a>
+            <a href="/about" class="hover:text-amber-300">About</a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="hover:text-amber-300"
-              >Careers</a
-            >
+            <a href="/careers" class="hover:text-amber-300">Careers</a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="hover:text-amber-300"
-              >Contact</a
-            >
+            <a href="/pricing" class="hover:text-amber-300">Pricing</a>
           </li>
         </ul>
       </div>
@@ -115,9 +111,6 @@
       <nav class="flex items-center gap-6">
         <a href="/privacy" class="hover:text-amber-300">Privacy Policy</a>
         <a href="/terms-of-use" class="hover:text-amber-300">Terms of Use</a>
-        <a href="javascript:void(0)" class="hover:text-amber-300"
-          >Cookie Policy</a
-        >
       </nav>
     </div>
   </div>
