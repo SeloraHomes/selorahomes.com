@@ -4,5 +4,5 @@ description: "Selora Homes pricing — coming soon."
 keywords: ["Selora Homes", "Pricing", "Plans"]
 ---
 
-Coming soon.
+<span class="text-4xl">Coming soon!</span>
 

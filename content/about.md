@@ -4,5 +4,5 @@ description: "Learn more about Selora Homes."
 keywords: ["Selora Homes", "About", "Professional Home Assistant"]
 ---
 
-Coming soon.
+<span class="text-4xl">Coming soon!</span>
 
