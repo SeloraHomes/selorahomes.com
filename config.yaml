@@ -25,18 +25,6 @@ params:
   twitter_creator: "@SeloraHomes"
   company_type: "Technology Company"
   service_area: "United States"
-  phone: "+1-555-012-3456"
-  email: "partners@selorahomes.com"
-  address: "123 Innovation Drive, Smart City, SC 29485"
-
-  # Brand colors
-  colors:
-    primary_gold: "#C7AE6A"
-    secondary_gold: "#b99a45"
-    light_gold: "#d5c28f"
-    cream: "#e3d6b4"
-    primary_black: "#000000"
-    charcoal: "#1a1a1a"
 
   # Selora Homes
   SeloraHomes:
