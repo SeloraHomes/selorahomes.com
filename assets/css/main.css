@@ -1,5 +1,6 @@
 /* Tailwind v4 Directives */
 @import "tailwindcss";
+/* Typography is used because pages are generated */
 @plugin "@tailwindcss/typography";
 @source "hugo_stats.json";
 
