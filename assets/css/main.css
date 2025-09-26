@@ -67,11 +67,16 @@
   }
 }
 
+/* Global variables */
+:root {
+  --selora-gold-gradient: linear-gradient(90deg, #fde68a, #f59e0b, #fbbf24);
+}
+
 /* Component Layer */
 @layer components {
   /* Gold gradient text utility */
   .gold-text {
-    background-image: linear-gradient(90deg, #fde68a, #f59e0b, #fbbf24);
+    background-image: var(--selora-gold-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -98,6 +103,14 @@
       0 0 45px rgba(245, 158, 11, 0.3),
       0 6px 20px rgba(245, 158, 11, 0.25);
     transform: translateY(-1px);
+  }
+
+  /* Apply gold text to typography headings within prose */
+  .prose :is(h1, h2, h3, h4) {
+    background-image: var(--selora-gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .btn-secondary {
