@@ -1,5 +1,6 @@
 /* Tailwind v4 Directives */
 @import "tailwindcss";
+/* Typography is used because pages are generated */
 @plugin "@tailwindcss/typography";
 @source "hugo_stats.json";
 
@@ -53,7 +54,7 @@
   h4,
   h5,
   h6 {
-    @apply font-semibold text-zinc-50;
+    @apply font-semibold text-amber-400;
   }
 
   /* Link defaults */
@@ -103,14 +104,6 @@
       0 0 45px rgba(245, 158, 11, 0.3),
       0 6px 20px rgba(245, 158, 11, 0.25);
     transform: translateY(-1px);
-  }
-
-  /* Apply gold text to typography headings within prose */
-  .prose :is(h1, h2, h3, h4) {
-    background-image: var(--selora-gold-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
 
   .btn-secondary {
@@ -473,13 +466,5 @@ article.prose h3,
 article.prose h4,
 article.prose h5,
 article.prose h6 {
-  background-image: linear-gradient(
-    90deg,
-    #fde68a,
-    #f59e0b,
-    #fbbf24
-  ) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  color: transparent !important;
+  @apply font-semibold text-amber-400;
 }
