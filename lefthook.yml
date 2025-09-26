@@ -3,4 +3,4 @@ pre-commit:
   commands:
     prettier-templates-check:
       glob: "layouts/**/*.html"
-      run: npx prettier --check {staged_files}
+      run: npx prettier --check -w {staged_files}
