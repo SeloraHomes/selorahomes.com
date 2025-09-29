@@ -27,17 +27,18 @@
   "license": "MIT",
   "dependencies": {
     "@marcreichel/alpine-typewriter": "^1",
-    "alpinejs": "^3"
+    "alpinejs": "^3",
+    "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {
-    "lefthook": "^1.7.12",
-    "prettier": "^3.3.3",
-    "prettier-plugin-go-template": "^0.0.15",
-    "prettier-plugin-tailwindcss": "^0.6.8",
     "@tailwindcss/cli": "^4.1.13",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.16",
+    "lefthook": "^1.7.12",
     "postcss": "^8.4.31",
+    "prettier": "^3.3.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^4.1.13"
   }
 }

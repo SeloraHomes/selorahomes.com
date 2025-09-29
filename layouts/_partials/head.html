@@ -90,6 +90,19 @@
 
 <link rel="canonical" href="{{ .Permalink }}" />
 
+<!-- Bootstrap Icons -->
+<link
+  rel="preload"
+  as="font"
+  href="{{ "/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" | relURL }}"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="stylesheet"
+  href="{{ "/vendor/bootstrap-icons/bootstrap-icons.min.css" | relURL }}"
+/>
+
 {{ $opts := dict "targetPath" "js/bundle.js" "minify" (not hugo.IsDevelopment) "format" "iife" }}
 {{ with resources.Get "js/main.js" | js.Build $opts }}
   {{ if hugo.IsDevelopment }}
