@@ -41,263 +41,32 @@
         <p
           class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-zinc-500 sm:text-xl"
         >
-          Connect with experts and unlock premium features for your Home
-          Assistant setup. Join thousands of homeowners and professionals in our
-          exclusive Connect portal.
+          Our team of professionals is ready to troubleshoot issues,<br />
+          answer your questions, and guide you through any challenges.
         </p>
       </div>
       <!-- Primary CTA -->
-      <div class="animate-fade-in" style="animation-delay: 0.4s">
+      <div class="animate-fade-in" style="animation-delay:.4s">
         <a
-          href="{{ .Site.Params.SeloraHomes.Connect.registerURL }}"
-          class="pulse-glow btn-glow-primary inline-block rounded-xl bg-amber-500 px-10 py-5 text-xl font-semibold text-black transition-all duration-300"
+          href="https://connect.selorahomes.com/"
+          class="btn-glow-enhanced group relative inline-block px-12 py-6 text-3xl font-bold text-black rounded-xl overflow-hidden"
         >
-          Get Early Access - Free
+          <span class="btn-border-gradient"></span>
+          <span class="relative z-10">
+            Get Free Support
+            <i
+              class="bi bi-arrow-right-circle-fill ml-3 arrow-icon align-middle transition-transform duration-200 text-2xl"
+              aria-hidden="true"
+            ></i>
+          </span>
         </a>
-        <p class="mt-4 text-sm text-zinc-500">
-          No credit card required • Premium features launching soon
-        </p>
+        <div class="mt-6 trust-badges">
+          <span class="trust-badge">
+            <i class="bi bi-check-circle-fill"></i>
+            No Credit Card Required
+          </span>
+        </div>
       </div>
     </div>
-    <!-- Scroll Indicator -->
-    <a
-      id="scroll-indicator"
-      href="#why"
-      aria-label="Scroll down"
-      class="group animate-bounce-slow fixed bottom-6 left-1/2 z-20 hidden -translate-x-1/2 transition-opacity duration-300 md:block"
-    >
-      <div
-        class="pulse-gold-border flex h-10 w-6 items-start justify-center rounded-full border-2 border-amber-500/35"
-      >
-        <div
-          class="pulse-gold-bg mt-2 h-3 w-1 rounded-full bg-amber-500/75"
-        ></div>
-      </div>
-    </a>
   </main>
-
-  <!-- Why Choose Section -->
-  <section
-    id="why"
-    class="relative flex min-h-screen flex-col justify-center py-12 md:py-20"
-  >
-    <div class="mx-auto max-w-7xl px-6">
-      <h2
-        class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
-      >
-        Why Choose <span class="gold-text-center">Selora Homes</span>?
-      </h2>
-      <p class="mx-auto mt-4 max-w-3xl text-center text-zinc-400">
-        We bridge the gap between Home Assistant's powerful capabilities and
-        user-friendly experience. Whether you're a homeowner or professional, we
-        provide the support you need.
-      </p>
-      <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Connect Portal -->
-        <div class="rounded-xl border border-amber-500/20 bg-zinc-900 p-6">
-          <div class="mb-3 text-amber-400">
-            <svg
-              class="h-7 w-7"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M4 4h16v12H7l-3 3V4z"></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-semibold text-zinc-50">Connect Portal</h3>
-          <p class="mt-2 text-zinc-400">
-            Get direct access to expert support and premium resources.
-          </p>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Online
-              Expert Support
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span
-              >Priority Response
-            </li>
-          </ul>
-        </div>
-        <!-- For Home Owners -->
-        <div class="rounded-xl border border-amber-500/20 bg-zinc-900 p-6">
-          <div class="mb-3 text-amber-400">
-            <svg
-              class="h-7 w-7"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M3 10.5L12 3l9 7.5V21a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-6h-4v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10.5z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-semibold text-zinc-50">For Home Owners</h3>
-          <p class="mt-2 text-zinc-400">
-            Transform your home into a smart sanctuary with professional
-            guidance. We make Home Assistant accessible for everyone.
-          </p>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Setup
-              Assistance
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Custom
-              Configurations
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span
-              >Troubleshooting
-            </li>
-          </ul>
-        </div>
-        <!-- For Professionals -->
-        <div class="rounded-xl border border-amber-500/20 bg-zinc-900 p-6">
-          <div class="mb-3 text-amber-400">
-            <svg
-              class="h-7 w-7"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M8 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v9H2V9a2 2 0 0 1 2-2h2V5zm2 2h4V5h-4v2z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-semibold text-zinc-50">For Professionals</h3>
-          <p class="mt-2 text-zinc-400">
-            Scale your smart home business with enterprise‑grade support and
-            advanced tools designed for installers and integrators.
-          </p>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span
-              >Business Tools
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Bulk
-              Licensing
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span
-              >Technical Resources
-            </li>
-          </ul>
-        </div>
-        <!-- Privacy & Security -->
-        <div class="rounded-xl border border-amber-500/20 bg-zinc-900 p-6">
-          <div class="mb-3 text-amber-400">
-            <svg
-              class="h-7 w-7"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 2l8 4v6c0 5-3.6 9.4-8 10C7.6 21.4 4 17 4 12V6l8-4z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-semibold text-zinc-50">
-            Privacy &amp; Security
-          </h3>
-          <p class="mt-2 text-zinc-400">
-            Keep your data local and secure. Home Assistant runs entirely on
-            your network, with our support maintaining your privacy.
-          </p>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Local
-              Control
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>No
-              Cloud Dependency
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>No
-              vendor lock-in
-            </li>
-          </ul>
-        </div>
-        <!-- Premium Support -->
-        <div class="rounded-xl border border-amber-500/20 bg-zinc-900 p-6">
-          <div class="mb-3 text-amber-400">
-            <svg
-              class="h-7 w-7"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 3a7 7 0 0 0-7 7v4a3 3 0 0 0 3 3h2v-4H7V10a5 5 0 0 1 10 0v3h-3v4h2a3 3 0 0 0 3-3v-4a7 7 0 0 0-7-7z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-semibold text-zinc-50">Premium Support</h3>
-          <p class="mt-2 text-zinc-400">
-            Get help from certified Home Assistant experts. From simple
-            questions to complex automations, we've got you covered.
-          </p>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Video
-              Consultations
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Remote
-              Assistance
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Custom
-              Solutions
-            </li>
-          </ul>
-        </div>
-        <!-- Advanced Features -->
-        <div class="rounded-xl border border-amber-500/20 bg-zinc-900 p-6">
-          <div class="mb-3 text-amber-400">
-            <svg
-              class="h-7 w-7"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"></path>
-            </svg>
-          </div>
-          <h3 class="text-3xl font-semibold text-zinc-50">Advanced Features</h3>
-          <p class="mt-2 text-zinc-400">
-            Unlock premium integrations and advanced automations. Take your Home
-            Assistant setup to the next level.
-          </p>
-          <ul class="mt-4 space-y-2 text-sm text-zinc-300">
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Premium
-              Integrations
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span
-              >Advanced Automations
-            </li>
-            <li class="flex items-center gap-2 text-xl">
-              <span class="h-1.5 w-1.5 rounded-full bg-amber-400"></span>Early
-              Access
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="mt-12 text-center">
-        <a
-          href="{{ .Site.Params.SeloraHomes.Connect.registerURL }}"
-          class="btn-glow-primary inline-block rounded-xl bg-amber-500 px-8 py-4 font-semibold text-black transition-all duration-300"
-          >Start Your Journey Today</a
-        >
-      </div>
-    </div>
-  </section>
 {{ end }}

@@ -30,7 +30,7 @@ params:
   SeloraHomes:
     Connect:
       loginURL: https://connect.selorahomes.com/login
-      registerURL: https://connect.selorahomes.com/register
+      registerURL: https://connect.selorahomes.com/
 
 # GitHub Pages specific settings
 publishDir: "public"
