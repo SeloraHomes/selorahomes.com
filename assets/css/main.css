@@ -578,5 +578,5 @@ article.prose h6 {
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.875rem;
-  color: #ffd700;
+  color: --color-secondary;
 }
