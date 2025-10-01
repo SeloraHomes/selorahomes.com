@@ -110,6 +110,16 @@
     box-shadow: 0 4px 14px #b99a45;
   }
 
+  /* CTA-specific text styling */
+  .btn-cta {
+    color: #1a1a1a;
+    text-shadow: 1px 1px 2px white;
+  }
+  .btn-cta:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #1a1a1a;
+  }
+
   .btn-primary:hover {
     @apply bg-primary-hover;
     box-shadow:
@@ -290,7 +300,6 @@ main,
 }
 
 /* Luxury Button Glow Effects */
-
 
 /* Scroll indicator pulse styles */
 @keyframes gold-border-pulse {
@@ -484,4 +493,90 @@ article.prose h4,
 article.prose h5,
 article.prose h6 {
   @apply text-selora-gold font-semibold;
+}
+
+/* Enhanced glow effect */
+.btn-glow-enhanced {
+  position: relative;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  box-shadow:
+    0 0 40px rgba(255, 215, 0, 0.5),
+    0 0 80px rgba(255, 215, 0, 0.3),
+    0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: pulse-glow 2s infinite;
+}
+
+.btn-glow-enhanced:hover {
+  background: linear-gradient(135deg, #ffa500, #ffd700);
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 60px rgba(255, 215, 0, 0.7),
+    0 0 100px rgba(255, 215, 0, 0.4),
+    0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Subtle pulsing animation */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 40px rgba(255, 215, 0, 0.5),
+      0 0 80px rgba(255, 215, 0, 0.3),
+      0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 50px rgba(255, 215, 0, 0.6),
+      0 0 90px rgba(255, 215, 0, 0.4),
+      0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Arrow animation on hover */
+.group:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Animated border */
+.btn-border-gradient {
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, transparent, #ffd700, transparent);
+  border-radius: 12px;
+  opacity: 0;
+  animation: rotate-border 3s linear infinite;
+  transition: opacity 0.3s;
+}
+
+.btn-glow-enhanced:hover .btn-border-gradient {
+  opacity: 1;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Badge styles */
+.trust-badges {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: #ffd700;
 }
