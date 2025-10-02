@@ -82,11 +82,7 @@
 /* Global variables */
 :root {
   /* Center‑bright gold using brand tones */
-  --selora-gold-gradient: background: linear-gradient(
-      135deg,
-      #f4e4c1 0%,
-      #d4c4a1 100%
-    );
+  --selora-gold-gradient: linear-gradient(90deg, #fde68a, #f59e0b, #fbbf24);
 }
 
 /* Component Layer */
@@ -101,7 +97,7 @@
 
   /* Alternative gold gradient */
   .text-gradient-gold {
-    background: linear-gradient(135deg, #e3d6b4 0%, #d5c28f 100%);
+    background: linear-gradient(135deg, #f4e4c1 0%, #d4c4a1 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
