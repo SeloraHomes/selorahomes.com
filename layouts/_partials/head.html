@@ -90,6 +90,24 @@
 
 <link rel="canonical" href="{{ .Permalink }}" />
 
+<!-- PostHog Configuration -->
+{{- if .Site.Params.posthog.apiKey }}
+  <meta name="posthog:api-key" content="{{ .Site.Params.posthog.apiKey }}" />
+  <meta name="posthog:api-host" content="{{ .Site.Params.posthog.apiHost }}" />
+  {{- if .Site.Params.posthog.uiHost }}
+    <meta name="posthog:ui-host" content="{{ .Site.Params.posthog.uiHost }}" />
+  {{- end }}
+  <meta
+    name="posthog:enable-dev"
+    content="{{ .Site.Params.posthog.enableInDevelopment }}"
+  />
+  <meta
+    name="posthog:respect-dnt"
+    content="{{ .Site.Privacy.posthog.respectDoNotTrack }}"
+  />
+{{- end }}
+
+
 <!-- Avenir Heavy Font -->
 <link
   rel="preload"

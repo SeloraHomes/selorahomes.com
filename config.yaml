@@ -32,6 +32,13 @@ params:
       loginURL: https://connect.selorahomes.com/login
       registerURL: https://connect.selorahomes.com/
 
+  # PostHog Analytics Configuration
+  posthog:
+    apiKey: "phc_9iP1kTUxX09C8uz2DM9IEux55IRW1nTqdvspaWIrTjG"
+    apiHost: "https://us.i.posthog.com"
+    uiHost: "https://us.posthog.com"
+    enableInDevelopment: true # Set to true to enable PostHog in development mode
+
 # GitHub Pages specific settings
 publishDir: "public"
 relativeURLs: false
@@ -141,6 +148,9 @@ privacy:
     respectDoNotTrack: true
     anonymizeIP: true
     useSessionStorage: true
+  posthog:
+    disable: false
+    respectDoNotTrack: true
   x:
     enableDNT: true
     simple: true
@@ -159,7 +169,7 @@ server:
         X-Frame-Options: "DENY"
         X-XSS-Protection: "1; mode=block"
         X-Content-Type-Options: "nosniff"
-        Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self';"
+        Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.posthog.com us.i.posthog.com us-assets.i.posthog.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' us.i.posthog.com us-assets.i.posthog.com *.posthog.com;"
 
 # Tailwindcss
 build:
