@@ -150,6 +150,9 @@ privacy:
     respectDoNotTrack: true
     anonymizeIP: true
     useSessionStorage: true
+  posthog:
+    disable: false
+    respectDoNotTrack: true
   x:
     enableDNT: true
     simple: true
