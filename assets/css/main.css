@@ -257,47 +257,6 @@
   color: transparent;
 }
 
-/* Scroll snapping disabled to prevent conflicts with typewriter animation */
-/* html,
-body {
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 64px;
-}
-main,
-#why,
-#footer {
-  scroll-snap-align: start;
-}
-#why,
-#footer {
-  scroll-snap-stop: always;
-} */
-
-/* Why section layout + icon glow */
-#why .rounded-xl.bg-zinc-900.p-6 {
-  display: grid;
-  grid-template-columns: 2.75rem 1fr;
-  column-gap: 1rem;
-  align-items: start;
-}
-#why .rounded-xl.bg-zinc-900.p-6 .text-amber-400.mb-3 svg {
-  width: 2.25rem !important;
-  height: 2.25rem !important;
-  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.42))
-    drop-shadow(0 0 18px rgba(251, 191, 36, 0.24));
-}
-#why .rounded-xl.bg-zinc-900.p-6 h3,
-#why .rounded-xl.bg-zinc-900.p-6 p,
-#why .rounded-xl.bg-zinc-900.p-6 ul {
-  grid-column: 2;
-}
-#why .rounded-xl.bg-zinc-900.p-6 .text-selora-gold.mb-3 .bi {
-  font-size: 2.25rem !important;
-  line-height: 1;
-  /* Reduced, subtle glow */
-  filter: drop-shadow(0 0 6px #b99a451f);
-}
-
 /* Luxury Button Glow Effects */
 
 /* Scroll indicator pulse styles */
