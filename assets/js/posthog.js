@@ -22,6 +22,8 @@ if (shouldInit) {
     capture_pageview: true,
     capture_pageleave: true,
     persistence: "localStorage+cookie",
+    cross_subdomain_cookie: true,
+    cookie_domain: ".selorahomes.com",
     session_recording: {
       maskAllInputs: true,
       maskTextSelector: "*",
