@@ -34,10 +34,12 @@ params:
 
   # PostHog Analytics Configuration
   posthog:
+    disable: false
     apiKey: "phc_9iP1kTUxX09C8uz2DM9IEux55IRW1nTqdvspaWIrTjG"
     apiHost: "https://us.i.posthog.com"
     uiHost: "https://us.posthog.com"
-    enableInDevelopment: true # Set to true to enable PostHog in development mode
+    enableInDevelopment: true
+    respectDoNotTrack: true
 
 # GitHub Pages specific settings
 publishDir: "public"
@@ -148,9 +150,6 @@ privacy:
     respectDoNotTrack: true
     anonymizeIP: true
     useSessionStorage: true
-  posthog:
-    disable: false
-    respectDoNotTrack: true
   x:
     enableDNT: true
     simple: true
