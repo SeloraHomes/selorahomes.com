@@ -503,12 +503,15 @@ article.prose h6 {
   background: linear-gradient(45deg, transparent, #ffd700, transparent);
   border-radius: 12px;
   opacity: 0;
-  animation: rotate-border 3s linear infinite;
+  /* Start in a stable orientation with no animation by default */
+  transform: rotate(0deg);
   transition: opacity 0.3s;
 }
 
 .btn-glow-enhanced:hover .btn-border-gradient {
   opacity: 1;
+  /* On each hover, rotate once to 180deg and stop until hover ends */
+  animation: rotate-border 0.6s ease-out 1 forwards;
 }
 
 @keyframes rotate-border {
@@ -516,7 +519,7 @@ article.prose h6 {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 
